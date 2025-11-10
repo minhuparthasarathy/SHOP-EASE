@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini E-Commerce Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopEase</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h2>Welcome to ShopEase</h2>
+    <p>Your one-stop shop for everything you love ❤️</p>
+    <button onclick="showForm('register')">Register</button>
+    <button onclick="showForm('login')">Login</button>
+  </section>
+
+  <!-- Registration Form -->
+  <div id="registerForm" class="form-container hidden">
+    <h3>User Registration</h3>
+    <input type="text" id="regName" placeholder="Full Name" />
+    <input type="email" id="regEmail" placeholder="Email" />
+    <input type="password" id="regPass" placeholder="Password" />
+    <button onclick="validateRegister()">Register</button>
+  </div>
+
+  <!-- Login Form -->
+  <div id="loginForm" class="form-container hidden">
+    <h3>User Login</h3>
+    <input type="email" id="logEmail" placeholder="Email" />
+    <input type="password" id="logPass" placeholder="Password" />
+    <button onclick="validateLogin()">Login</button>
+  </div>
+
+  <section id="products" class="section">
+    <h2>Product Items</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" alt="Product 1">
+        <h4>Smartphone</h4>
+        <p>₹25,999</p>
+        <button>Add to Wishlist</button>
+      </div>
+      <div class="product">
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/og-airpods-max-202409?wid=1200&hei=630&fmt=jpeg&qlt=90&.v=1724144125817" alt="Product 2">
+        <h4>Wireless Headphones</h4>
+        <p>₹4,999</p>
+        <button>Add to Wishlist</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="orders" class="section">
+    <h2>My Orders</h2>
+    <ul>
+      <li>No recent orders</li>
+    </ul>
+  </section>
+
+  <section id="wishlist" class="section">
+    <h2>My Wishlist</h2>
+    <ul>
+      <li>Headphones</li>
+      <li>Smartwatch</li>
+    </ul>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2>Comments & Reviews</h2>
+    <textarea placeholder="Write your review..."></textarea>
+    <button>Submit</button>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Customer Care</h2>
+    <p>Email: support@shopease.com</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>ShopEase is a demo e-commerce website designed for educational purposes.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEase | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
